@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
    //content.toString("utf-8");
    content.toString("utf-8", 0, 256);
    
-   response.send(content)};
+   response.send(content)});
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
